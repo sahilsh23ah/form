@@ -1,48 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text formatting clone of wikipedia</title>
+    <title>Basic html and css page</title>
     <style>
-        .image{
-            border-radius: 23px;
+        * {
+            margin: 0;
+            padding: 0;
         }
+
+        body {
+            background-color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            margin: 0px 35px;
+            padding: 8px;
+        }
+
+        .nav_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo {
+            width: 90px;
+            border: 15px solid rgb(222 225 37);
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .items {
+            margin: -60px 54px 0px 0px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .item a {
+            text-decoration: none;
+            /* for removing underline of given links of nav */
+            color: #000000;
+            font-size: 23px;
+
+        }
+
+        .item a:hover {
+            color: #eb230e;
+            text-decoration: underline;
+            /* background-color: #63e25f;
+            border:2px groove rgb(17, 168, 110);
+            border-radius: 10px; */
+        }
+
+        /* main */
+        /* section 1 */
+        .main_section1 {
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 64px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .first {
+            width: 700px;
+        }
+
+        .second img {
+            width: 400px;
+        }
+
+        .main_img {
+            border-radius: 23px 12px;
+        }
+
+        .main_heading {
+            font-size: 34px;
+            color: hsl(125, 97%, 23%)
+        }
+
+        /* main */
+        /* section 2 */
+        .main_section2{
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;
+            padding-top: 60px;
+
+        }
+        .img1{
+            width: 200px;
+            border-radius: 24px;
+        }
+        #im{
+           width: 156px;
+        }
+        .img_h h3{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        
+        /* main */
+        /* section 3 */
+        .main_section3{
+            display: flex;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .src1{
+           border-radius: 20px 39px;
+           height: 245px;
+           width: 350px;
+        }
+
+        .comment{
+            width: 846px;
+           font-size: 29px;
+           font-weight: 500;
+           color: #4a054a;
+            
+
+        }
+
+
+
+
+
+
+
+
+
+    
+      .footer{
+        background-color: black;
+        color: #f1ecec;
+        width: 100%;
+        height: 30px;
+      }
+      .footer_edit{
+        text-align: center;
+        font-size: 25px;
+      }
+
     </style>
 </head>
+
 <body>
-    <h1>Structure and design</h1>
-    <hr>
-    <img style="float: right;"  src="image.jpeg"   alt="" class="image">
-    <p>A blockchain is a decentralized, distributed, and often public, digital ledger consisting of records called blocks that are used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks.[3][20] This allows the participants to verify and audit transactions independently and relatively inexpensively.[21] A blockchain database is managed autonomously using a peer-to-peer network and a distributed timestamping server. They are authenticated by mass collaboration powered by collective self-interests.[22] Such a design facilitates robust workflow where participants' uncertainty regarding data security is marginal. The use of a blockchain removes the characteristic of infinite reproducibility from a digital asset. It confirms that each unit of value was transferred only once, solving the long-standing problem of double-spending. A blockchain has been described as a value-exchange protocol.[23] A blockchain can maintain title rights because, when properly set up to detail the exchange agreement, it provides a record that compels offer and acceptance.[citation needed]
+    <header class="header container">
 
-        <pre>Logically, a blockchain can be seen as consisting of several layers:<sup>[24]</sup></pre>
+        <nav class="nav_header">
+            <a href="#">
+                <img src="./imgage1.png" alt="something wrong" class="logo">
+            </a>
 
-        <ul>
-            <li>infrastructure (hardware)</li>
-            <li>networking (node discovery, information propagation<sup>[25]</sup>and verification)</li>
-            <li>consensus (proof of work, proof of stake)</li>
-            <li>data (blocks, transactions)</li>
-            <li>application (smart contracts/decentralized applications, if applicable)</li>
-        </ul>
-      </p>
 
-      <h3>Blocks</h3>
-      <p>
-        Blocks hold batches of valid transactions that are hashed and encoded into a Merkle tree.<sup>[3]</sup> Each block includes the cryptographic hash of the prior block in the blockchain, linking the two. The linked blocks form a chain.<sup>[3]</sup> This iterative process confirms the integrity of the previous block, all the way back to the initial block, which is known as the genesis block (Block 0).<sup>[26][27]</sup> To assure the integrity of a block and the data contained in it, the block is usually digitally signed.<sup>[28]</sup></p>
+            <div class="items">
+                <p class="item"><a href="#">Home</a></p>
+                <p class="item"><a href="#">About</a></p>
+                <p class="item"><a href="#">Contact Us</a></p>
 
-        <h4>Block time</h4>
-        <p>The block time is the average time it takes for the network to generate one extra block in the blockchain. By the time of block completion, the included data becomes verifiable. In cryptocurrency, this is practically when the transaction takes place, so a shorter block time means faster transactions. The block time for Ethereum is set to between 14 and 15 seconds, while for bitcoin it is on average 10 minutes.<sup>[33]</sup></p>
+            </div>
+        </nav>
 
-        <h4>Hard forks</h4>
-        <P><i>section is an excerpt from Fork (blockchain) § Hard fork.[edit]</i></P>
-        <P>For example, Ethereum was hard-forked in 2016 to "make whole" the investors in The DAO, which had been hacked by exploiting a vulnerability in its code. In this case, the fork resulted in a split creating Ethereum and Ethereum Classic chains. In 2014 the Nxt community was asked to consider a hard fork that would have led to a rollback of the blockchain records to mitigate the effects of a theft of 50 million NXT from a major cryptocurrency exchange. The hard fork proposal was rejected, and some of the funds were recovered after negotiations and ransom payment. Alternatively, to prevent a permanent split, a majority of nodes using the new software may return to the old rules, as was the case of bitcoin split on 12 March 2013.<sup>[34]</sup></P>
-       
-        <h4>Decentralization</h4>
-        <P>Every node in a decentralized system has a copy of the blockchain. Data quality is maintained by massive database replication[40] and computational trust. No centralized "official" copy exists and no user is "trusted" more than any other.[39] Transactions are broadcast to the network using the software. Messages are delivered on a best-effort basis. Early blockchains rely on energy-intensive mining nodes to validate transactions,[27] add them to the block they are building, and then broadcast the completed block to other nodes.[30]:Blockchains use various time-stamping schemes, such as proof-of-work, to serialize changes.[41] Later consensus methods include proof of stake.[27] The growth of a decentralized blockchain is accompanied by the risk of centralization because the computer resources required to process larger amounts of data become more expensive.[42]</P>
+    </header>
 
-        <h4>Image of Bitcoin</h4>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/220px-Bitcoin.svg.png" alt="something missing from src artribute">
+
+    <main class="main container">
+        <!-- Section 1 -->
+        <section class="main_section1">
+
+            <div class="first">
+                <h1 class="main_heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, animi.</h1>
+            </div>
+
+            <div class="second">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="something missing" class="main_img">
+            </div>
+
+        </section>
+        <!-- Section 2 -->
+        <section class="main_section2">
+            <div class="img_h">
+                <img src="https://media.istockphoto.com/id/1314037715/photo/smart-home-symbol.jpg?b=1&s=170667a&w=0&k=20&c=Uz3NsnYzTGyBYLZLXkxUVM1nveJYtkTCs79pf1SECwU=" alt="Error" class="img1">
+                <h3>wifi</h3>
+            </div>
+            <div class="img_h">
+                <img src="https://media.istockphoto.com/id/1383510053/photo/twitter-3d-logo-3d-render-image-illustration.jpg?b=1&s=170667a&w=0&k=20&c=di0YsCiGV5eY84Vrx-7Vcg6TZQyzCgKSo2Qgbo1M9s8=" alt="Error"  class="img1" id="im">
+                <h3>Twitter</h3>
+            </div>
+            <div class="img_h">
+                <img src="https://media.istockphoto.com/id/1353775192/photo/golden-youtube-play-icon-with-the-red-luxury-boxes-and-white-spheres-3d-illustration-of-lux.jpg?b=1&s=170667a&w=0&k=20&c=uN2pqhwskQM-9ctJs_vKUZwBrEhoFdpxLAUKMxVEtoA=" alt="Error" class="img1">
+                <h3>YouTube</h3>
+            </div>
+
+        </section>
+        <!-- section 3 -->
+        <section class="main_section3">
+            <div>
+                <img src="https://images.unsplash.com/photo-1675629172984-adaffe2ad47e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Error" class="src1">
+            </div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius voluptatem perferendis error nam quam? Blanditiis expedita alias totam repellendus?</p>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <p class="footer_edit">Copyright &copy;2023</p>
+        </footer>
+
+    </main>
+
+
 </body>
+
 </html>
