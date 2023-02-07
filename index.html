@@ -5,225 +5,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic html and css page</title>
+    <title>Fitness</title>
+    
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
+        /* css reset */
         body {
-            background-color: whitesmoke;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Abril Fatface', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://media.istockphoto.com/id/1362684836/photo/a-happy-sporty-couple-doing-exercises-for-biceps-with-barbells-in-a-gym-and-making-eye.jpg?s=612x612&w=0&k=20&c=aaTjebERq8dGy99biPGfyLz2oZmc1OG1Du_O7XYM3vY=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            color: white;
+            height: 300px;
+          
         }
 
-        .container {
-            margin: 0px 35px;
-            padding: 8px;
+        .left {
+            
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 17px;
         }
-
-        .nav_header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
+        .left img{
+            width: 80px;
+            border-radius: 15px;
         }
-
-        .logo {
-            width: 90px;
-            border: 15px solid rgb(222 225 37);
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-        }
-
-        .items {
-            margin: -60px 54px 0px 0px;
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .item a {
-            text-decoration: none;
-            /* for removing underline of given links of nav */
-            color: #000000;
-            font-size: 23px;
-
-        }
-
-        .item a:hover {
-            color: #eb230e;
-            text-decoration: underline;
-            /* background-color: #63e25f;
-            border:2px groove rgb(17, 168, 110);
-            border-radius: 10px; */
-        }
-
-        /* main */
-        /* section 1 */
-        .main_section1 {
-            display: flex;
-            padding-top: 40px;
-            padding-bottom: 64px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .first {
-            width: 700px;
-        }
-
-        .second img {
-            width: 400px;
-        }
-
-        .main_img {
-            border-radius: 23px 12px;
-        }
-
-        .main_heading {
-            font-size: 34px;
-            color: hsl(125, 97%, 23%)
-        }
-
-        /* main */
-        /* section 2 */
-        .main_section2{
-            display: flex;
-            justify-content: space-around; 
-            align-items: center;
-            padding-top: 60px;
-
-        }
-        .img1{
-            width: 200px;
-            border-radius: 24px;
-        }
-        #im{
-           width: 156px;
-        }
-        .img_h h3{
+        .left div{
             text-align: center;
-            font-size: 24px;
-            font-weight: 500;
+            line-height: 28px;
+             font-size: 20px;
+        }
+
+        .mid {
+           
+            display: block;
+            margin: 11px auto;
+             width: 36%;
+            
+            }
+
+        .right {
+             display: inline-block;
+             font-style: bold;
+            position: absolute;
+            right: 20px;
+            top: 17px;
+            
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size: 18px;
+            
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 30px 17px;
+        }
+
+        .navbar li a:hover{
+            color: gold;
+        }
+
+        .btn{
+
+            margin:0px 10px;
+            background-color: #9800f7;
+            color: black;
+            padding: 10px 15px;
+            border: 3px solid  whitesmoke;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Abril Fatface', cursive;
+            }
+
+        .btn:hover{
+           background-color: #fffc5c;
+           color: #8b2500;
+
+        }
+
+        .container{
+            /* border: 3px solid white; */
+            margin: 80px -27px;
+            padding: 30px 45px ;
+            border-radius: 7px ;
+            width:30% ;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 225px;
+            margin: 5px auto;
+            padding: 7px 30px;
+            border: 3px solid red;
+            font-size: 13px;
+            border-radius: 10px;
+
+        }
+
+        .container button{
+            display: block;
+            width: 73%;
+            margin: 13px 56px;
+            font-size: large;
         }
 
         
-        /* main */
-        /* section 3 */
-        .main_section3{
-            display: flex;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            justify-content:space-between;
-            align-items: center;
-        }
-        .src1{
-           border-radius: 20px 39px;
-           height: 245px;
-           width: 350px;
-        }
-
-        .comment{
-            width: 846px;
-           font-size: 29px;
-           font-weight: 500;
-           color: #4a054a;
-            
-
-        }
-
-
-
-
-
-
-
-
-
-    
-      .footer{
-        background-color: black;
-        color: #f1ecec;
-        width: 100%;
-        height: 30px;
-      }
-      .footer_edit{
-        text-align: center;
-        font-size: 25px;
-      }
-
     </style>
-</head>
+
 
 <body>
-    <header class="header container">
-
-        <nav class="nav_header">
-            <a href="#">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&usqp=CAU" alt="something wrong" class="logo">
-            </a>
-
-
-            <div class="items">
-                <p class="item"><a href="#">Home</a></p>
-                <p class="item"><a href="#">About</a></p>
-                <p class="item"><a href="#">Contact Us</a></p>
-
-            </div>
-        </nav>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+          <img src="https://media.istockphoto.com/id/1340543493/photo/weightlifting-icon.jpg?b=1&s=170667a&w=0&k=20&c=qcvoRxM1D87mQkMTcHLnkLM9vbpNrgl7e_07tWK6SKA=" alt="">
+          <div>Fitness</div>
+        </div>
+        <!-- middle box for navbar -->
+        <div class="mid">
+         <ul class="navbar">
+            <li><a href="https://www.google.com/search?q=timer&rlz=1C1GCEA_enIN1010IN1010&oq=timer&aqs=chrome..69i57j0i67i131i433l5j0i67j0i67i131i433j0i67j0i67i131i433.1585j0j15&sourceid=chrome&ie=UTF-8">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+       
+         </ul>
+        </div>
+        <!-- right for button -->
+        <div class="right">
+           <button class="btn">Call us</button>
+           <button class="btn">Email us</button>
+        </div>
 
     </header>
 
+    <div class="container">
+        <pre><h3>Join the best Gym house </h3></pre> 
+        <form action="noaction.php">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name ">
+         </div>
 
-    <main class="main container">
-        <!-- Section 1 -->
-        <section class="main_section1">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+         </div>
 
-            <div class="first">
-                <h1 class="main_heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, animi.</h1>
-            </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+         </div>
 
-            <div class="second">
-                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt="something missing" class="main_img">
-            </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+         </div>
+         <button class="btn">Sumbit</button>
 
-        </section>
-        <!-- Section 2 -->
-        <section class="main_section2">
-            <div class="img_h">
-                <img src="https://media.istockphoto.com/id/1314037715/photo/smart-home-symbol.jpg?b=1&s=170667a&w=0&k=20&c=Uz3NsnYzTGyBYLZLXkxUVM1nveJYtkTCs79pf1SECwU=" alt="Error" class="img1">
-                <h3>wifi</h3>
-            </div>
-            <div class="img_h">
-                <img src="https://media.istockphoto.com/id/1383510053/photo/twitter-3d-logo-3d-render-image-illustration.jpg?b=1&s=170667a&w=0&k=20&c=di0YsCiGV5eY84Vrx-7Vcg6TZQyzCgKSo2Qgbo1M9s8=" alt="Error"  class="img1" id="im">
-                <h3>Twitter</h3>
-            </div>
-            <div class="img_h">
-                <img src="https://media.istockphoto.com/id/1353775192/photo/golden-youtube-play-icon-with-the-red-luxury-boxes-and-white-spheres-3d-illustration-of-lux.jpg?b=1&s=170667a&w=0&k=20&c=uN2pqhwskQM-9ctJs_vKUZwBrEhoFdpxLAUKMxVEtoA=" alt="Error" class="img1">
-                <h3>YouTube</h3>
-            </div>
 
-        </section>
-        <!-- section 3 -->
-        <section class="main_section3">
-            <div>
-                <img src="https://images.unsplash.com/photo-1675629172984-adaffe2ad47e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Error" class="src1">
-            </div>
-            <div class="comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius voluptatem perferendis error nam quam? Blanditiis expedita alias totam repellendus?</p>
-            </div>
-        </section>
-
-        <!-- section 4 -->
-
-        <!-- footer -->
-        <footer class="footer">
-            <p class="footer_edit">Copyright &copy;2023</p>
-        </footer>
-
-    </main>
+        </form>
+    </div>
 
 
 </body>
