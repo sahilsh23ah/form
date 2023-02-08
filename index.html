@@ -1,189 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness</title>
-    
-</head>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
+    <title>basic button project</title>
     <style>
-        /* css reset */
-        body {
-            font-family: 'Abril Fatface', cursive;
-            margin: 0px;
-            padding: 0px;
-            background: url('https://media.istockphoto.com/id/1362684836/photo/a-happy-sporty-couple-doing-exercises-for-biceps-with-barbells-in-a-gym-and-making-eye.jpg?s=612x612&w=0&k=20&c=aaTjebERq8dGy99biPGfyLz2oZmc1OG1Du_O7XYM3vY=');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
+        .subscribe-button{
+            background-color:red;
             color: white;
-            height: 300px;
+            border: none;
+            height: 40px;
+            width: 122px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 2px;
+
+        }
+
+        .subscribe-button:hover{
+            opacity: 0.6;
+        }
+        .subscribe-button:active{
+            /* opacity: 0.6; */
+            background-color: black;
+        }
+
+        .join-button{
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            border-radius: 2px;
+            height: 40px;
+            width: 70px;
+            margin-left: 23px;
+            cursor: pointer;
           
         }
 
-        .left {
-            
-            display: inline-block;
-            position: absolute;
-            left: 20px;
-            top: 17px;
-        }
-        .left img{
-            width: 80px;
-            border-radius: 15px;
-        }
-        .left div{
-            text-align: center;
-            line-height: 28px;
-             font-size: 20px;
-        }
-
-        .mid {
-           
-            display: block;
-            margin: 11px auto;
-             width: 36%;
-            
-            }
-
-        .right {
-             display: inline-block;
-             font-style: bold;
-            position: absolute;
-            right: 20px;
-            top: 17px;
-            
-        }
-
-        .navbar{
-            display: inline-block;
-        }
-
-        .navbar li{
-            display: inline-block;
-            font-size: 18px;
-            
-        }
-
-        .navbar li a{
-            text-decoration: none;
+        .join-button:hover{
+            background-color: blue;
             color: white;
-            padding: 30px 17px;
+            transition: background-color 1s;
+
+        }
+        .join-button:active{
+            background-color: black;
         }
 
-        .navbar li a:hover{
-            color: gold;
-        }
-
-        .btn{
-
-            margin:0px 10px;
-            background-color: #9800f7;
-            color: black;
-            padding: 10px 15px;
-            border: 3px solid  whitesmoke;
-            border-radius: 10px;
-            font-size: 15px;
+        .tweet-button{
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            height: 43px;
+            width: 85px;
+            margin-left: 23px;
             cursor: pointer;
-            font-family: 'Abril Fatface', cursive;
-            }
-
-        .btn:hover{
-           background-color: #fffc5c;
-           color: #8b2500;
-
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 700;
         }
 
-        .container{
-            /* border: 3px solid white; */
-            margin: 80px -27px;
-            padding: 30px 45px ;
-            border-radius: 7px ;
-            width:30% ;
-            font-size: 20px;
-            text-align: center;
+        .tweet-button:hover{
+            box-shadow: 12px 7px 11px rgb(0, 0, 0,0.40);                   /* 1st is for right and 2nd for down 3rd for blur */
+        }
+        .tweet-button:active{
+            background-color:#673ab7;
         }
 
-        .form-group input{
-            text-align: center;
-            display: block;
-            width: 225px;
-            margin: 5px auto;
-            padding: 7px 30px;
-            border: 3px solid red;
-            font-size: 13px;
-            border-radius: 10px;
-
-        }
-
-        .container button{
-            display: block;
-            width: 73%;
-            margin: 13px 56px;
-            font-size: large;
-        }
-
-        
     </style>
-
-
+</head>
 <body>
-    <header class="header">
-        <!-- left box for logo -->
-        <div class="left">
-          <img src="https://media.istockphoto.com/id/1340543493/photo/weightlifting-icon.jpg?b=1&s=170667a&w=0&k=20&c=qcvoRxM1D87mQkMTcHLnkLM9vbpNrgl7e_07tWK6SKA=" alt="">
-          <div>Fitness</div>
-        </div>
-        <!-- middle box for navbar -->
-        <div class="mid">
-         <ul class="navbar">
-            <li><a href="https://www.google.com/search?q=timer&rlz=1C1GCEA_enIN1010IN1010&oq=timer&aqs=chrome..69i57j0i67i131i433l5j0i67j0i67i131i433j0i67j0i67i131i433.1585j0j15&sourceid=chrome&ie=UTF-8">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-       
-         </ul>
-        </div>
-        <!-- right for button -->
-        <div class="right">
-           <button class="btn">Call us</button>
-           <button class="btn">Email us</button>
-        </div>
 
-    </header>
+    <button class="subscribe-button">
+        SUBSCRIBES
+    </button>
 
-    <div class="container">
-        <pre><h3>Join the best Gym house </h3></pre> 
-        <form action="noaction.php">
-         <div class="form-group">
-            <input type="text" name="" placeholder="Enter your name ">
-         </div>
-
-         <div class="form-group">
-            <input type="text" name="" placeholder="Enter your Age">
-         </div>
-
-         <div class="form-group">
-            <input type="text" name="" placeholder="Enter your gender">
-         </div>
-
-         <div class="form-group">
-            <input type="text" name="" placeholder="Enter your Locality">
-         </div>
-         <div class="form-group">
-            <input type="text" name="" placeholder="Enter your Email">
-         </div>
-         <button class="btn">Sumbit</button>
-
-
-        </form>
-    </div>
-
-
+    <button class="join-button">
+        JOIN
+    </button>
+    
+    <button class="tweet-button">
+        Tweet
+    </button>
 </body>
-
 </html>
