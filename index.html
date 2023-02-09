@@ -4,84 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic button project</title>
+    <title>Text</title>
     <style>
-        .subscribe-button{
-            background-color:red;
-            color: white;
-            border: none;
-            height: 40px;
-            width: 122px;
-            cursor: pointer;
-            border: 1px solid black;
-            border-radius: 2px;
-
+        p{
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        .subscribe-button:hover{
-            opacity: 0.6;
-        }
-        .subscribe-button:active{
-            /* opacity: 0.6; */
-            background-color: black;
-        }
-
-        .join-button{
-            background-color: white;
-            color: blue;
-            border: 1px solid blue;
-            border-radius: 2px;
-            height: 40px;
-            width: 70px;
-            margin-left: 23px;
-            cursor: pointer;
-          
-        }
-
-        .join-button:hover{
-            background-color: blue;
-            color: white;
-            transition: background-color 1s;
-
-        }
-        .join-button:active{
-            background-color: black;
-        }
-
-        .tweet-button{
-            background-color: blue;
-            color: white;
-            border: 1px solid blue;
-            height: 43px;
-            width: 85px;
-            margin-left: 23px;
-            cursor: pointer;
-            border-radius: 15px;
-            font-size: 18px;
+        .video-title{
+            font-size: 26px;
             font-weight: 700;
+            font-style:Bold;
+            /* text-align: center; */
+            width: 650px;
+            line-height: 30px;
+            margin-top: 7px;
+        }
+        .dot{
+            font-size: 15px;
+            color: rgb(68, 63, 63);
+            margin-top: -22px;
         }
 
-        .tweet-button:hover{
-            box-shadow: 12px 7px 11px rgb(0, 0, 0,0.40);                   /* 1st is for right and 2nd for down 3rd for blur */
+        .check-mark{
+         
+            font-size: 15px;
+            color: rgb(102, 97, 97);
+            margin-bottom: 23px;
+
         }
-        .tweet-button:active{
-            background-color:#673ab7;
+
+        .para{
+           
+           font-size: 15px;
+           width: 460px;
+           color: rgb(104, 95, 95);
+           line-height: 21px;
+           margin-bottom: 60px;
+
+        }
+
+        .btn{
+          background-color: red;
+          color: white;
+          width: 457px;
+          height: 35px;
+         text-align: center;
+         padding: 18px 0px 0px 0px;
+         border-radius: 2px;
+         font-weight: 600;
+         font-style: Bold;
+
+        }
+        .btn:hover{
+            text-decoration:underline;
+            background-color: rgba(255, 0, 0,0.75);
+            cursor:pointer;
+        }
+
+        .second-btn{
+            font-size: 17px;
+             margin-top: 37px;
+                }
+
+        #span{
+            color: red;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+        #span:hover{
+            text-decoration: underline;
+            cursor: pointer;
         }
 
     </style>
 </head>
 <body>
 
-    <button class="subscribe-button">
-        SUBSCRIBES
-    </button>
+    <p class="video-title">
+        This is paragraph we learn by this something about font and styling text.
+    </p>
 
-    <button class="join-button">
-        JOIN
-    </button>
-    
-    <button class="tweet-button">
-        Tweet
-    </button>
+    <p class="dot">
+        4.5M views 	&#183; 6 months ago
+    </p>
+
+    <p class="check-mark">
+        Marques Browniee &check;
+    </p>
+
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius illum, officia dicta cum autem, enim laborum reiciendis quisquam labore optio consequuntur quasi repudiandae sit inventore! Placeat corporis fugit blanditiis!
+    </p>
+
+    <p class="btn">
+        Shop early for the best selection of holiday.Shop now >
+    </p>
+
+    <p class="second-btn">
+        Shop early for the <strong>best selection</strong> of <u>holiday</u>.favaroite. <span id="span">Shop now</span> 
+    </p>
 </body>
 </html>
